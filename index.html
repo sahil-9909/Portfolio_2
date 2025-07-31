@@ -1,39 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sahil Salunkhe | Portfolio</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     body {
       font-family: 'Montserrat', sans-serif;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #ffffff;
       line-height: 1.6;
     }
+
     header {
       background-color: rgba(30, 41, 59, 0.95);
       padding: 2.5rem 1rem;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
+
     header h1 {
       font-size: 3rem;
       color: #00d1ff;
     }
+
     header p {
       font-size: 1.25rem;
       margin-top: 0.5rem;
       color: #b0e0f0;
     }
+
     .profile-img {
       width: 150px;
       height: 150px;
@@ -42,48 +54,58 @@
       margin-top: 1rem;
       border: 3px solid #00d1ff;
     }
+
     main {
       padding: 2rem 1rem;
       max-width: 960px;
       margin: auto;
     }
+
     section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
       background: rgba(255, 255, 255, 0.05);
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
+
     h2 {
       color: #00d1ff;
       margin-bottom: 1rem;
       border-left: 4px solid #00d1ff;
       padding-left: 0.75rem;
     }
+
     ul {
       list-style-type: square;
       padding-left: 1.5rem;
     }
+
     a {
       color: #00d1ff;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .social-icons {
       display: flex;
       gap: 1.5rem;
       margin-top: 1rem;
     }
+
     .social-icons a {
       font-size: 2rem;
       color: #00d1ff;
       transition: 0.3s;
     }
+
     .social-icons a:hover {
       color: #38f6ff;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -95,50 +117,68 @@
   </style>
 </head>
 <body>
-  <header>
+
+  <!-- Header -->
+  <header data-aos="fade-up">
     <h1>Sahil Sunil Salunkhe</h1>
     <p>SY E&TC Student | Innovator | IoT & Web Enthusiast</p>
     <img src="sahil-image.jpg" class="profile-img" />
   </header>
 
   <main>
-    <section>
+
+    <!-- About Section -->
+    <section data-aos="fade-up">
       <h2>About Me</h2>
       <p>I am a first-year Electronics & Telecommunication student at SSVPS's BSD College of Engineering, Dhule. I am passionate about innovation, especially in the fields of IoT, AI, and Web Development. I belong to Dhule and love exploring practical engineering problems.</p>
     </section>
 
-    <section>
+    <!-- Project Section -->
+    <section data-aos="fade-up">
       <h2>Current Project</h2>
       <p><strong>Title:</strong> High Efficiency Oil Recovery System Utilizing Oleophilic Rotating Metal Disc For Marine Oil Spill Skimming</p>
       <p>This project focuses on developing a mechanical system that can efficiently collect oil spills from water surfaces using a specially designed oleophilic rotating disc. It aims to offer an eco-friendly, efficient, and low-cost solution for marine oil recovery.</p>
     </section>
 
-    <section>
+    <!-- Skills Section -->
+    <section data-aos="fade-up">
       <h2>Skills</h2>
-        <ul>
+      <ul>
         <li>Python</li>
         <li>IoT (Internet of Things)</li>
         <li>Arduino</li>
         <li>Web Designing (HTML, CSS, JS)</li>
         <li>Basic Electronics & Sensors</li>
-        </ul>
+      </ul>
     </section>
 
-    <section>
+    <!-- Contact Section -->
+    <section data-aos="fade-up">
       <h2>Contact & Links</h2>
-      
-      
       <div class="social-icons">
         <a href="tel:+919834658900" target="_blank"><i class="fas fa-phone"></i></a>
         <a href="mailto:sahilsalun000@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
         <a href="https://github.com/sahil-9909" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/sahil-salunkhe-6a275b31b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/sahil-salunkhe-6a275b31b" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
     </section>
+
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer data-aos="fade-up">
     &copy; 2025 Sahil Salunkhe | All Rights Reserved
   </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,     // Animation duration in ms
+      once: false,        // Animate every time (not just once)
+      mirror: true        // Animate on scroll up as well
+    });
+  </script>
+
 </body>
 </html>
